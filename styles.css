@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(12, 35, 64);
+    padding-top: 20%;
+}
+
+.result{
+    width: 100%;
+    height: 100px;
+    border-radius: 5%;
+    font-size: 60px;
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+}
+
+.row_1, .row_2, .row_3, .row_4, .odd_row{
+    max-width: 100%;
+    display: flex;
+    padding-top: 10px;
+}
+
+.R5_B1{
+    flex: 1 75%;
+}
+
+button{
+    flex: 1 25%;
+    height: 120px;
+    border-radius: 10%;
+    font-size: 50px;
+    font-weight:900;
+    border: none;
+    background-color: rgb(232, 119, 34);
+    color: rgb(12, 35, 64);
+}
+.R1_B4, .R2_B4, .R3_B4, .R4_B4, .R5_B2, .R1_B1, .R1_B2, .R1_B3{
+    background-color: rgb(222, 244, 64);
+}
