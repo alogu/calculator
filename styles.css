@@ -13,13 +13,13 @@ body{
     justify-content: flex-end;
 }
 
-.row_1, .row_2, .row_3, .row_4, .odd_row{
+.row_1, .row_2, .row_3, .row_4, .row_5{
     max-width: 100%;
     display: flex;
     padding-top: 10px;
 }
 
-.R5_B1{
+#R5_B1{
     flex: 1 75%;
 }
 
@@ -31,8 +31,8 @@ button{
     font-weight:900;
     border: none;
     background-color: rgb(232, 119, 34);
-    color: rgb(12, 35, 64);
+    color:black; 
 }
-.R1_B4, .R2_B4, .R3_B4, .R4_B4, .R5_B2, .R1_B1, .R1_B2, .R1_B3{
+#R1_B4, #R2_B4, #R3_B4, #R4_B4, #R5_B2, #R1_B1, #R1_B2, #R1_B3{
     background-color: rgb(222, 244, 64);
 }
