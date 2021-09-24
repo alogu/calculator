@@ -1,5 +1,5 @@
 const displayStr = document.getElementById('displayStr');
-
+var isProduct = false;
 
 /**
  * Erase the current string and replace with 0.
@@ -13,8 +13,9 @@ function clearScreen(){
  * If it exists, remove and create empty string, else append display string. 
  */
 function checkForZero(){
-    if(displayStr.textContent === '0'){
+    if(displayStr.textContent === '0' || isProduct){
         displayStr.textContent = '';
+        isProduct = false;
     }
 } 
     
@@ -25,6 +26,16 @@ function display(val){
     //console.log(displayStr.textContent);
     displayStr.textContent += givenValue;
 }
+
+/**
+ *  Gets an expression, returns the result.  
+ * 
+ */
+function calculate(){
+    displayStr.textContent = eval(displayStr.textContent);
+    isProduct = true;
+}
+
 /**
  * Give functionality to the calculator buttons. 
  * Prints to the display screen and any unique functions
